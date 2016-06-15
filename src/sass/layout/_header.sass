@@ -1,0 +1,185 @@
+#header
+	.wrapper
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		z-index: 1
+	.logo 
+		display: inline-block
+		margin-top: 15px
+		+transition(0.2s)
+		&:hover
+			+opacity(0.5)
+.header-img
+	position: relative
+	max-height: 400px
+	overflow: hidden
+	&:before
+		content: ""
+		height: 100%
+		width: 100%
+		display: block
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: rgba(#141a1e, 0.7)
+	&>img 
+		width: 100%
+		display: block
+		max-width: 100%
+		max-height: 100%
+.menu-burger
+	float: right
+	+transition(0.3s)
+	width: 33px
+	height: 25px
+	margin-top: 18px
+	margin-left: 0px
+	position: relative
+	.menu-burger-item
+		display: block
+		width: 100%
+		background: #fff
+		+transition(0.3s)
+		height: 5px
+		margin-top: 10px
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			display: block
+			width: 100%
+			background: #fff
+			height: 5px
+		&:after
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			display: block
+			width: 100%
+			background: #fff
+			height: 5px
+.language
+	float: right
+	position: relative
+	border: 1px solid rgba(#fff, 0.6)
+	margin-top: 15px
+	margin-right: 17px
+	+border-radius(4px)
+	a
+		position: relative
+		display: inline-block
+		padding: 7px 13px 5px
+	.language-content
+		+opacity(0)
+		display: block
+		position: absolute
+		top: -100%
+		right: 0
+		a 
+			display: block
+	&.language-open
+		.language-content
+			+opacity(1)
+			top: 30px
+.mobile-phone
+	text-decoration: none
+	border: 1px solid rgba(#fff, 0.6)
+	+border-radius(4px)	
+	float: right
+	margin-top: 15px
+	padding: 5px 13px 2px
+	margin-right: 10px
+	&:before
+		+font-icon("telephone")
+		font-size: 22px
+		line-height: 22px
+		color: #fff
+.mobile-menu
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	z-index: 89
+	left: -100%
+	background: rgba(#212121, 0.98)
+	+opacity(0)
+	padding-top: 70px
+	.mobile-menu-item
+		float: left
+		height: 100%
+		width: 100%
+		ul
+			background: rgba(#212222, 0.9)
+			padding-bottom: 10px
+		li 
+			padding: 20px 0
+			display: block
+			width: 100%
+			+transition(0.3s)
+			border-bottom: 1px solid #2c2c2c
+			&:hover
+				background: #1c1c1c
+		a 
+			color: #fff
+			font-size: 18px
+			letter-spacing: 0.8px
+			line-height: 20px
+			position: relative
+			padding-left: 20px
+.mobile-menu-open
+	+transition(0.3s)
+	#header
+		.header-img
+			&:before
+				background: rgba(#141a1e, 0)
+		.wrapper
+			z-index: 120
+	.mobile-menu
+		+transition(0.3s)
+		display: block
+		top: 0
+		left: 0
+		+opacity(1)		
+	.menu-burger
+		+transition(0.3s)
+		margin-top: 25px
+		.menu-burger-item
+			+transition(0.3s)
+			+rotate(135deg)
+			margin-bottom: -3px
+			margin-top: 3px
+			&:after
+				display: none
+			&:before
+				+rotate(90deg)
+.innovation
+	color: #fff
+	h5
+		font-size: 18px
+		line-height: 20px
+		text-transform: uppercase
+		font-weight: 700
+		letter-spacing: 1px
+		margin-top: 30px
+		margin-bottom: 17px
+		display: inline-block
+	p 
+		font-size: 16px
+		span 
+			text-transform: uppercase
+			display: block
+		
+	&:before
+		+font-icon("innovation")
+		font-size: 85px
+		color: #e6e6e6
+		+opacity(0.5)
+		float: left
+
+
