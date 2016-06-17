@@ -1,11 +1,15 @@
 #footer
-	background: image-url("footer-img.jpg") left bottom no-repeat
-	padding-top: 106px
-	padding-bottom: 45px
+	padding: 30px 0
 	position: absolute
 	bottom: 0
 	left: 0
 	right: 0
+	background-color: #f8f8f8
+	.footer-img
+		float: left
+		position: absolute
+		left: -65px
+		bottom: -62px
 .development-support 
 	color: #3c4741
 	font-size: 14px
@@ -16,11 +20,12 @@
 	letter-spacing: 0.3px
 	margin-top: 27px
 	margin-left: 2px
-	padding-left: 92px
+	padding-left: 71px
 	+box-sizing(border-box)
 	a 
 		display: inline-block
 		color: #31a665
 		+transition(0.2s)
+		margin-top: 10px
 		&:hover
 			color: #0a371e

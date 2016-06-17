@@ -78,7 +78,7 @@
 			text-transform: uppercase
 			margin-bottom: 15px
 		p 
-			display: inline-block
+			display: block
 			font-size: 18px
 			line-height: 20px
 			color: #313131
@@ -127,6 +127,7 @@
 .about-company-partners-img
 	font-size: 0
 	line-height: 0
+	text-align: center
 	a
 		display: inline-block
 		vertical-align: top
@@ -237,8 +238,12 @@
 			max-height: 950px
 
 .company-email
-	background: image-url("truck.jpg") right 50px no-repeat
 	padding-top: 120px
+	position: relative
+	.truck
+		position: absolute
+		top: -75px
+		right: -192px
 	h4
 		font-size: 30px
 		line-height: 36px

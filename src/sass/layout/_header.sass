@@ -39,6 +39,7 @@
 	margin-top: 18px
 	margin-left: 0px
 	position: relative
+	cursor: pointer
 	.menu-burger-item
 		display: block
 		width: 100%
@@ -75,6 +76,9 @@
 		position: relative
 		display: inline-block
 		padding: 7px 13px 5px
+		+transition(0.2s)
+		&:hover
+			+opacity(0.5)
 	.language-content
 		+opacity(0)
 		display: block
@@ -95,6 +99,10 @@
 	margin-top: 15px
 	padding: 5px 13px 2px
 	margin-right: 10px
+	+transition(0.2s)
+	&:hover
+		&:before
+			+opacity(0.5)
 	&:before
 		+font-icon("telephone")
 		font-size: 22px
@@ -110,6 +118,7 @@
 	background: rgba(#212121, 0.98)
 	+opacity(0)
 	padding-top: 70px
+	+transition(0.3s)
 	.mobile-menu-item
 		float: left
 		height: 100%
